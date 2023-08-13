@@ -1,0 +1,85 @@
+
+/* Adjust the sidebar width as needed */
+body {
+    font-family: 'Times New Roman', serif;
+}
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40;
+    padding-top: 20px;
+}
+
+/* Style for sidebar links */
+.sidebar a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+    border-radius: 25px;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+    border-radius: 25px;
+}
+.sidebar a.active {
+    border-radius: 25px;
+    background-color: #f8f9fa; /* Add a background color for the selected link */
+    color: #000; /* Change text color for the selected link */
+}
+
+/* Adjust the content margin to give space for the sidebar */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+.dashboard-link {
+    text-decoration: none; /* Remove default underline */
+    color: #000; /* Set the text color */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    padding: 5px 10px; /* Add some padding for better visual */
+}
+
+.dashboard-link:hover {
+    background-color: #f0f0f0; /* Change the background color on hover */
+}
+
+.dashboard-link.active {
+    background-color: #ffffff; /* Change the background color when link is active */
+    color: black; 
+}
+.tools-link {
+    text-decoration: none !important;
+    color: #ffffff !important;
+    transition: background-color 0.3s ease !important;
+    padding: 5px 10px !important;
+}
+
+.tools-link:hover {
+    background-color: #f0f0f0 !important;
+}
+
+.tools-link.active {
+    background-color: #ffffff !important;
+    color: black !important;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+   
